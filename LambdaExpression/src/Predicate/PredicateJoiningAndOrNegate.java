@@ -1,3 +1,5 @@
+package Predicate;
+
 import java.util.function.Predicate;
 
 public class PredicateJoiningAndOrNegate {
