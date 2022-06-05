@@ -1,5 +1,5 @@
 @FunctionalInterface
-interface  Cab{
+interface Cab {
     public String bookCab(String source, String destination);
 }
 

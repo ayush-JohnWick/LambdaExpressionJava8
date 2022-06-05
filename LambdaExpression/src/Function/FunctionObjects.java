@@ -33,25 +33,24 @@ public class FunctionObjects {
             else if (sal >= 30000 && sal <= 40000)
                 return (sal * 30) / 100;
             else
-                return(sal*40)/100;
+                return (sal * 40) / 100;
         };
 
-        for(Employee e : emp){
-          int bonus=f1.apply(e);
-            System.out.println(e.eName+ " "+ e.salary+ " Bonus is "+bonus);
+        for (Employee e : emp) {
+            int bonus = f1.apply(e);
+            System.out.println(e.eName + " " + e.salary + " Bonus is " + bonus);
         }
         //Joining Predicate and Function if bonus is greater than or equal to 5000 need to print
         //name and salary of employee as it is conditional check we can use Predicate here
 
-        Predicate<Integer> p=b->b>=5000;
+        Predicate<Integer> p = b -> b >= 5000;
 
-        for(Employee e : emp){
-            int bonus=f1.apply(e);
-            if(p.test(bonus))// condition to check bonus is greater than or equal to 5000
-                System.out.println(e.eName+ " "+ e.salary+ " Bonus is "+bonus);
+        for (Employee e : emp) {
+            int bonus = f1.apply(e);
+            if (p.test(bonus))// condition to check bonus is greater than or equal to 5000
+                System.out.println(e.eName + " " + e.salary + " Bonus is " + bonus);
 
         }
-
 
 
     }

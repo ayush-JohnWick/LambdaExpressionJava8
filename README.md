@@ -1,5 +1,3 @@
 # LambdaExpressionJava8
-Predicate
-Function
-Consumer
-Supplier
+
+Predicate Function Consumer Supplier

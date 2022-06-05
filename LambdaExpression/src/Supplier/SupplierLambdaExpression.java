@@ -7,10 +7,11 @@ public class SupplierLambdaExpression {
 
     public static void main(String[] args) {
         //Supplier has one method as get() and just supply and doesn't take any arguments
-        Supplier<Date> s=()-> new Date();
+        //also it doesn't have any return type
+        Supplier<Date> s = () -> new Date();
 
         System.out.println(s.get());
 
-        
+
     }
 }

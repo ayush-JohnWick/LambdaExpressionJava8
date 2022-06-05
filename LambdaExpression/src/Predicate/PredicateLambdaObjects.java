@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-class Employee{
+class Employee {
     String eName;
     int salary;
     int experience;
 
-    Employee(String ename, int salary, int experience){
-        this.eName=ename;
-        this.salary=salary;
-        this.experience=experience;
+    Employee(String ename, int salary, int experience) {
+        this.eName = ename;
+        this.salary = salary;
+        this.experience = experience;
     }
 }
 
@@ -23,7 +23,7 @@ public class PredicateLambdaObjects {
         //emp obj --> return name if sal>30k and exp>3
         Employee emp = new Employee("John", 50000, 5);
 
-        Predicate<Employee> p=e->(e.salary>30000 && e.experience>3);
+        Predicate<Employee> p = e -> (e.salary > 30000 && e.experience > 3);
 
         System.out.println(p.test(emp));  //true
 
@@ -35,13 +35,11 @@ public class PredicateLambdaObjects {
         list.add(new Employee("Janice", 65000, 4));
         list.add(new Employee("Paul", 55000, 2));
 
-        for(Employee e : list){
-          if(p.test(e)){
-              System.out.println(e.eName+ "  "+ e.salary);
-          }
+        for (Employee e : list) {
+            if (p.test(e)) {
+                System.out.println(e.eName + "  " + e.salary);
+            }
         }
-
-
 
 
     }
